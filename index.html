@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div id="app">
+  <h2>Vanilla JavaScript and LocalStorage CRUD project</h2>
+
+  <div class="top-grid">
+    <div class="form-section">
+      <label>Product Code (ID)</label>
+      <input id="idInput" placeholder="only numbers..." />
+      <label>Product Name</label>
+      <input id="nameInput" placeholder="product name..." />
+      <label>Product Quantity</label>
+      <input id="qtyInput" type="number" min="1" placeholder="quantity..." />
+
+      <div class="buttons">
+        <button id="insertBtn" class="btn-insert">Insert new</button>
+        <button id="editBtn"   class="btn-edit">Edit item</button>
+        <button id="deleteBtn" class="btn-delete">Delete from LS</button>
+        <button id="clearBtn"  class="btn-clear">Clear</button>
+      </div>
+    </div>
+
+    <div class="find-section">
+      <label>Find Product by Code</label>
+      <div class="find-actions">
+        <input id="findInput" placeholder="Search code..." />
+        <button id="findBtn" class="btn-find">Select from LS</button>
+      </div>
+    </div>
+  </div>
+
+  <p id="msg"></p>
+
+  <div class="tables">
+    <div>
+      <h3>Product List</h3>
+      <table id="allTable" border="0">
+        <thead><tr><th>Product Code</th><th>Product Name</th><th>Quantity</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3>Found Product</h3>
+      <table id="foundTable" border="0">
+        <thead><tr><th>Product Code</th><th>Product Name</th><th>Quantity</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
